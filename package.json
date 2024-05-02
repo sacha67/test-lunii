@@ -1,0 +1,30 @@
+{
+  "name": "lunii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "dev": "nodemon src/app.ts",
+    "build": "rimraf dist && tsc",
+    "start": "node ./dist/app.js"
+  },
+  "author": "Oleksandr Avazashvili",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@types/validator": "^13.11.9",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  }
+}
