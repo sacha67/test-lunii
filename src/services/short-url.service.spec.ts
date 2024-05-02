@@ -36,10 +36,6 @@ it.each(validUrls)('should create a shortened url with a valid url', (validUrl: 
 });
 
 it.each(invalidUrls)('should fail to create a shortened url with an invalid url', (invalidUrl) => {
-    let shortUrlCreateDto: ShortUrlCreateDto = {
-        url: invalidUrl,
-    };
-
     expect(() => shortUrlService.createShortUrl(invalidUrl)).toThrow('Invalid url.')
 });
 
